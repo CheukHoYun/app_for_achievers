@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "./Header.css";
 
 class Header extends Component {
   state = {};
   render() {
-    return <header>This is the header!</header>;
+    return <header className="navbar">This is the header!</header>;
   }
 }
 
