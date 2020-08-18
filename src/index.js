@@ -1,14 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import MyInfo from "./components/MyInfo";
+import App from "./components/App";
 
-function MyApp() {
-  return (
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-  );
-}
-
-ReactDOM.render(MyApp(), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
