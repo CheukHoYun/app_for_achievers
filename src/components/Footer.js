@@ -1,12 +1,10 @@
-import React from "react";
-import App from "./App";
+import React, { Component } from "react";
 
-function Footer() {
-  return (
-    <footer>
-      <h3>This is a footer!</h3>
-    </footer>
-  );
+class Footer extends Component {
+  state = {};
+  render() {
+    return <footer> This is, of course, a footer. </footer>;
+  }
 }
 
 export default Footer;
