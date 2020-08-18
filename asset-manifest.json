@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/app_for_achievers/static/css/main.5f361e03.chunk.css",
-    "main.js": "/app_for_achievers/static/js/main.ced842de.chunk.js",
-    "main.js.map": "/app_for_achievers/static/js/main.ced842de.chunk.js.map",
+    "main.css": "/app_for_achievers/static/css/main.2fec7c0f.chunk.css",
+    "main.js": "/app_for_achievers/static/js/main.a7383e78.chunk.js",
+    "main.js.map": "/app_for_achievers/static/js/main.a7383e78.chunk.js.map",
     "runtime-main.js": "/app_for_achievers/static/js/runtime-main.6f1a65d1.js",
     "runtime-main.js.map": "/app_for_achievers/static/js/runtime-main.6f1a65d1.js.map",
     "static/js/2.004ff0f2.chunk.js": "/app_for_achievers/static/js/2.004ff0f2.chunk.js",
     "static/js/2.004ff0f2.chunk.js.map": "/app_for_achievers/static/js/2.004ff0f2.chunk.js.map",
     "index.html": "/app_for_achievers/index.html",
-    "precache-manifest.799beaf85a7b3924283db8510729518d.js": "/app_for_achievers/precache-manifest.799beaf85a7b3924283db8510729518d.js",
+    "precache-manifest.fd591543b7e32d7f8cef21892690a282.js": "/app_for_achievers/precache-manifest.fd591543b7e32d7f8cef21892690a282.js",
     "service-worker.js": "/app_for_achievers/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/app_for_achievers/static/css/main.5f361e03.chunk.css.map",
+    "static/css/main.2fec7c0f.chunk.css.map": "/app_for_achievers/static/css/main.2fec7c0f.chunk.css.map",
     "static/js/2.004ff0f2.chunk.js.LICENSE.txt": "/app_for_achievers/static/js/2.004ff0f2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6f1a65d1.js",
     "static/js/2.004ff0f2.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.ced842de.chunk.js"
+    "static/css/main.2fec7c0f.chunk.css",
+    "static/js/main.a7383e78.chunk.js"
   ]
 }
