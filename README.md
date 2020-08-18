@@ -1,7 +1,10 @@
 ## This is a single page application created for a job application at Achievers. 
 
 The application is under construction, and will be online and running in 48 hours. 
-The deadline of handing in the application is August.21th, I will keep maintaining the project and adding new features until then. Most work should be done in the first 48-hour sprint, though. 
+
+The deadline of handing in the application is August.21th, I will keep maintaining the project and adding new features until then. 
+
+Most work should be done in the first 48-hour sprint, though, since after that there are a lot of interviews and final exams waiting on the timeline. 
 
 You can view the current build at: https://cheukhoyun.github.io/app_for_achievers/
 
