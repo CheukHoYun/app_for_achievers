@@ -2,7 +2,7 @@
 
 The application is under construction, and will be online and running in 48 hours. 
 
-The deadline of handing in the application is August.21th, I will keep maintaining the project and adding new features until then. 
+The deadline of handing in the application is August.21, I will keep maintaining the project and adding new features until then. 
 
 Most work should be done in the first 48-hour sprint, though, since after that there are a lot of interviews and final exams waiting on the timeline. 
 
