@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/app_for_achievers/static/js/main.b4652146.chunk.js",
+    "main.js.map": "/app_for_achievers/static/js/main.b4652146.chunk.js.map",
+    "runtime-main.js": "/app_for_achievers/static/js/runtime-main.6f1a65d1.js",
+    "runtime-main.js.map": "/app_for_achievers/static/js/runtime-main.6f1a65d1.js.map",
+    "static/js/2.004ff0f2.chunk.js": "/app_for_achievers/static/js/2.004ff0f2.chunk.js",
+    "static/js/2.004ff0f2.chunk.js.map": "/app_for_achievers/static/js/2.004ff0f2.chunk.js.map",
+    "index.html": "/app_for_achievers/index.html",
+    "precache-manifest.c90798e9cfa71d84cc256765fb66a271.js": "/app_for_achievers/precache-manifest.c90798e9cfa71d84cc256765fb66a271.js",
+    "service-worker.js": "/app_for_achievers/service-worker.js",
+    "static/js/2.004ff0f2.chunk.js.LICENSE.txt": "/app_for_achievers/static/js/2.004ff0f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f1a65d1.js",
+    "static/js/2.004ff0f2.chunk.js",
+    "static/js/main.b4652146.chunk.js"
+  ]
+}
