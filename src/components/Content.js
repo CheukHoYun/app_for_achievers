@@ -10,7 +10,7 @@ class Content extends Component {
 
   componentDidMount() {
     fetch(
-      "https://api.themoviedb.org/3/movie/550?api_key=f1eac36202d95b8df16fcf8afd17c6b0"
+      "https://api.themoviedb.org/3/movie/531?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-CA"
     )
       .then((response) => response.json())
       .then((data) => this.setState({ movie: data }));
