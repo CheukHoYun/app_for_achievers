@@ -1,9 +1,15 @@
 import React, { Component } from "react";
+import ContactCard from "./contactCard";
 
 class Content extends Component {
   state = {};
   render() {
-    return <main>This is the content!</main>;
+    return (
+      <main className="content">
+        <ContactCard />
+        <ContactCard />
+      </main>
+    );
   }
 }
 
