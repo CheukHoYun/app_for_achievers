@@ -15,15 +15,16 @@ class Header extends Component {
   };
 
   countNumber = (n) => {
-    if (n > 0) return <div>{n}</div>;
-    else return <div>zero</div>;
+    if (n > 0) return n;
+    else return "zero";
   };
 
   render() {
     const buttonStyle = {};
     return (
       <header className="header">
-        <h2>This is the header! {this.countNumber(this.state.count)}</h2>
+        <p>This is the header!</p>
+        <p>{this.countNumber(this.state.count)}</p>
         <button style={{ margin: 10 }} onClick={this.handleClick}>
           Cart
         </button>
