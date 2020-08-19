@@ -11,7 +11,7 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 ### Purpose of this project:
 
 - Demonstrate that the applicant is able to perform full-stack web development.
-- Show off the applicant's knowledge about technologies including React, Redux, NodeJS, Bootstrap, etc.
+- Show off the applicant's knowledge about technologies including React, Redux, NodeJS, Bootstrap, etc. (Which techs will be used will be decided on the fly.)
 - Show the applicant's ability to gather information, learn new concepts and build stuff in a very short period of time.
 
 ### Updates:
