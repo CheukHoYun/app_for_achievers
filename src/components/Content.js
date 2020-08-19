@@ -10,7 +10,7 @@ class Content extends Component {
 
   componentDidMount() {
     fetch(
-      "https://api.themoviedb.org/3/movie/531?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-CA"
+      "https://api.themoviedb.org/3/movie/541?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-CA"
     )
       .then((response) => response.json())
       .then((data) => this.setState({ movie: data }));
@@ -20,7 +20,7 @@ class Content extends Component {
     console.log(this.state.movie);
     return (
       <main className="content">
-        <div>{this.state.movie.title}</div>
+        {/* <div>{this.state.movie.title}</div> */}
       </main>
     );
   }

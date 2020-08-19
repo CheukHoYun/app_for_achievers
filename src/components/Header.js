@@ -25,7 +25,11 @@ class Header extends Component {
       <header className="header">
         <p>This is the header!</p>
         <p>{this.countNumber(this.state.count)}</p>
-        <button style={{ margin: 10 }} onClick={this.handleClick}>
+        <button
+          style={{ margin: 10 }}
+          className="btn btn-primary btn-sm"
+          onClick={this.handleClick}
+        >
           Cart
         </button>
       </header>

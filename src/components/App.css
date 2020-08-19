@@ -21,3 +21,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.cart {
+  height: 75px;
+  color: rgb(36, 0, 136);
+  position: fixed;
+  top: 50px;
+  right: 100px;
+}

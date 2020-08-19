@@ -5,22 +5,24 @@ import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";
 import Cart from "./Cart";
+import ToolBar from "./ToolBar";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      somevar: "Hello World",
+      showCart: false,
     };
   }
   render() {
     return (
       <div>
         <Header />
+        <ToolBar />
         <Content />
         <Footer />
         <Cart />
-        {this.state.somevar}
+        {this.state.showCart.toString()}
       </div>
     );
   }
