@@ -17,3 +17,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 ### Updates:
 
 - Aug.18 20:00: Added several basic components and applied some css styles.
+- Aug.18 21:55: Added a dummy button and a counter, having fun with conditional rendering.
