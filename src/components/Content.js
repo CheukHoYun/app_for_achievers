@@ -4,20 +4,23 @@ class Content extends Component {
   constructor() {
     super();
     this.state = {
-      character: {},
+      movie: {},
     };
   }
 
   componentDidMount() {
-    fetch("https://swapi.dev/api/people/1")
+    fetch(
+      "https://api.themoviedb.org/3/movie/550?api_key=f1eac36202d95b8df16fcf8afd17c6b0"
+    )
       .then((response) => response.json())
-      .then((data) => this.setState({ character: data }));
+      .then((data) => this.setState({ movie: data }));
   }
 
   render() {
+    console.log(this.state.movie);
     return (
       <main className="content">
-        <div>{this.state.character.name}</div>
+        <div>{this.state.movie.title}</div>
       </main>
     );
   }

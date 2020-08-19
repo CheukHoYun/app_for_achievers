@@ -19,3 +19,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.18 20:00: Added several basic components and applied some css styles.
 - Aug.18 21:55: Added a dummy button and a counter, having fun with conditional rendering.
 - Aug.18 22:43: Tried some API call to SWAPI. Works in Safari but not in Chrome, gonna fix it.
+- Aug.18 23:14: Switched to TMDB API, the fetch is working properly. Will use it for later build.
