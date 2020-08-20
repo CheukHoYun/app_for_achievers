@@ -40,7 +40,7 @@ class App extends Component {
       <div>
         <Header onToggle={this.handleToggle} />
         <ToolBar onSearch={this.handleSearch} />
-        <Content />
+        <Content movieList={this.state.movies} />
         <Footer />
         {this.state.showCart ? <Cart /> : null}
       </div>
