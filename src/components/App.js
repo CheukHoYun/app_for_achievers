@@ -24,7 +24,7 @@ class App extends Component {
       "https://api.themoviedb.org/3/search/movie?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-US&query=" +
         keyword +
         "&page=1&include_adult=" +
-        adult
+        adult.toString()
     )
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data }));

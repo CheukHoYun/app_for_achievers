@@ -99,7 +99,7 @@ class ToolBar extends Component {
           </div>
           <button
             style={{ margin: 10 }}
-            type="submit"
+            type="button"
             className="btn btn-primary"
             onClick={() =>
               this.props.onSearch(
