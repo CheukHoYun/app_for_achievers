@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
       showCart: false,
       movies: {},
+      rating: 0,
     };
   }
 
@@ -19,7 +20,7 @@ class App extends Component {
     this.setState({ showCart: !this.state.showCart });
   };
 
-  async fetchposts(rating, adult, keyword) {
+  async fetchposts(adult, keyword) {
     let response = await fetch(
       "https://api.themoviedb.org/3/search/movie?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-US&query=" +
         keyword +
@@ -30,16 +31,25 @@ class App extends Component {
       .then((data) => this.setState({ movies: data }));
   }
 
-  handleSearch = (rating, adult, keyword) => {
-    this.fetchposts(rating, adult, keyword);
+  changeStar = (star) => {
+    this.setState({ rating: star });
+  };
+
+  handleSearch = (adult, keyword) => {
+    this.fetchposts(adult, keyword);
   };
 
   render() {
     return (
       <div>
         <Header onToggle={this.handleToggle} />
-        <ToolBar onSearch={this.handleSearch} />
+        <ToolBar
+          rating={this.state.rating}
+          changeStar={this.changeStar}
+          onSearch={this.handleSearch}
+        />
         <Content
+          rating={this.state.rating}
           movieList={
             Object.keys(this.state.movies).length === 0
               ? {}

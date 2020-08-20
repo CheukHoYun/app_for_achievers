@@ -6,7 +6,7 @@ class ToolBar extends Component {
     this.state = {
       keyword: "",
       isAdult: false,
-      rated: 0,
+      stars: "Rated Above..",
     };
   }
 
@@ -17,17 +17,13 @@ class ToolBar extends Component {
       : this.setState({ [name]: value });
   };
 
-  changeStar = (x) => {
-    this.setState({ rated: x });
-  };
-
-  toStars = (n) => {
-    let s = "";
-    for (let i = 0; i < n; i++) {
-      s += "★";
-    }
-    return s;
-  };
+  //   toStars = (n) => {
+  //     let s = "";
+  //     for (let i = 0; i < n; i++) {
+  //       s += "★";
+  //     }
+  //     return s.length == -1 ? "Rated above" : s;
+  //   };
 
   render() {
     return (
@@ -43,16 +39,17 @@ class ToolBar extends Component {
                 className="btn btn-info dropdown-toggle"
                 data-toggle="dropdown"
               >
-                {this.state.rated == 0
-                  ? "Rated"
-                  : this.toStars(this.state.rated)}
+                {this.state.stars}
               </button>
               <div className="dropdown-menu">
                 <a
                   style={{ color: "rgb(255,215,0)" }}
                   className="dropdown-item"
                   href="#"
-                  onClick={() => this.changeStar(5)}
+                  onClick={() => {
+                    this.setState({ stars: "★★★★★" });
+                    this.props.changeStar(7.4);
+                  }}
                 >
                   ★★★★★
                 </a>
@@ -60,7 +57,10 @@ class ToolBar extends Component {
                   style={{ color: "rgb(255,215,0)" }}
                   className="dropdown-item"
                   href="#"
-                  onClick={() => this.changeStar(4)}
+                  onClick={() => {
+                    this.setState({ stars: "★★★★" });
+                    this.props.changeStar(6.5);
+                  }}
                 >
                   ★★★★
                 </a>
@@ -68,7 +68,10 @@ class ToolBar extends Component {
                   style={{ color: "rgb(255,215,0)" }}
                   className="dropdown-item"
                   href="#"
-                  onClick={() => this.changeStar(3)}
+                  onClick={() => {
+                    this.setState({ stars: "★★★" });
+                    this.props.changeStar(0);
+                  }}
                 >
                   ★★★
                 </a>
@@ -102,18 +105,11 @@ class ToolBar extends Component {
             type="button"
             className="btn btn-primary"
             onClick={() =>
-              this.props.onSearch(
-                this.state.rated,
-                this.state.isAdult,
-                this.state.keyword
-              )
+              this.props.onSearch(this.state.isAdult, this.state.keyword)
             }
           >
             Search
           </button>
-          <div>{this.state.isAdult.toString()}</div>
-          <div>{this.state.keyword}</div>
-          <div>{this.state.rated}</div>
         </form>
       </div>
     );

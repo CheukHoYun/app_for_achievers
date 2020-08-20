@@ -31,3 +31,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.20 03:01: Successfully mapping movie cards to their positions. Time for some sleep.
 - Aug.20 03:04: Fixed some typos in README.md
 - Aug.20 09:55: Back to work
+- Aug.20 11:01: Fixed the filter by rating feature.
