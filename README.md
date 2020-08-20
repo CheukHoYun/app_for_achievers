@@ -28,3 +28,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.10 23:00: Successfully fetching data based on user input. Only tasks left: Format movie cards onto the page, make the shopping cart component.
 - Aug.11 01:25: Fixed a weird bug caused by "submit" typed buttons.
 - Aug.11 01:52: Component template for movie cards is done. Ready to do the format.
+- Aug.11 03:01: Successfully mapping movie cards to their positions. Time for some sleep.

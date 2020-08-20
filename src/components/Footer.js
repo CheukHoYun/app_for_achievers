@@ -4,10 +4,12 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <footer className="jumbotron text-center">
-        {" "}
-        A sample use of Bootstrap!{" "}
-      </footer>
+      <div className="container-fluid d-flex justify-content-center bg-dark text-white p-3">
+        <div>
+          Disclaimer: This is a project for learning & demonstration purpose
+          only.
+        </div>
+      </div>
     );
   }
 }

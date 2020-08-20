@@ -40,7 +40,7 @@ class ToolBar extends Component {
             <div className="dropdown">
               <button
                 type="button"
-                className="btn btn-primary dropdown-toggle"
+                className="btn btn-info dropdown-toggle"
                 data-toggle="dropdown"
               >
                 {this.state.rated == 0

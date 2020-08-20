@@ -9,26 +9,43 @@ class Content extends Component {
     };
   }
 
+  contentGen = () => {
+    const l = this.props.movieList;
+    let returnValue = [];
+    for (let i = 0; i < l.length; i++) {
+      returnValue.push(
+        <div className="col d-flex justify-content-center">
+          <div className="m-2">{this.props.movieList[i].title}</div>
+        </div>
+      );
+      if (i % 3 === 2) {
+        returnValue.push(<div className="w-100"></div>);
+      }
+    }
+    if (l.length % 3 === 1) {
+      returnValue.push(
+        <div className="col d-flex justify-content-center">
+          <div className="m-2"></div>
+        </div>
+      );
+    }
+    if (l.length % 3 === 2) {
+      returnValue.push(
+        <div className="col d-flex justify-content-center">
+          <div className="m-2"></div>
+        </div>
+      );
+    }
+    return returnValue;
+  };
+
   render() {
+    console.log("what");
+    console.log("hello,", this.props.movieList);
+
     return (
-      <div className="container-fluid">
-        {" "}
-        <div className="row">
-          <div className="col d-flex justify-content-center">
-            {Object.keys(this.props.movieList).length === 0 ? (
-              "nothing"
-            ) : (
-              <Movie movie={this.props.movieList.results[1]} />
-            )}
-          </div>
-          <div className="col d-flex justify-content-center">col</div>
-          <div className="col d-flex justify-content-center">col</div>
-          <div className="w-100"></div>
-          <div className="col d-flex justify-content-center">col</div>
-          <div className="col d-flex justify-content-center">col</div>
-          <div className="col d-flex justify-content-center">col</div>
-          <div className="w-100"></div>
-        </div>{" "}
+      <div className="container-fluid bg-dark">
+        <div className="row m-10">{this.contentGen()}</div>{" "}
       </div>
     );
   }
