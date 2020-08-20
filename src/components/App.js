@@ -19,13 +19,20 @@ class App extends Component {
     this.setState({ showCart: !this.state.showCart });
   };
 
-  handleSearch = (rating, adult, keyword) => {
-    fetch(
-      "https://api.themoviedb.org/3/movie/541?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-CA"
+  async fetchposts(rating, adult, keyword) {
+    let response = await fetch(
+      "https://api.themoviedb.org/3/search/movie?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-US&query=" +
+        keyword +
+        "&page=1&include_adult=" +
+        adult
     )
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data }));
     console.log("movies!!!", this.state.movies);
+  }
+
+  handleSearch = (rating, adult, keyword) => {
+    this.fetchposts(rating, adult, keyword);
   };
 
   render() {
