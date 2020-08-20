@@ -11,6 +11,7 @@ class App extends Component {
     super();
     this.state = {
       showCart: false,
+      movies: {},
     };
   }
 
@@ -18,11 +19,20 @@ class App extends Component {
     this.setState({ showCart: !this.state.showCart });
   };
 
+  handleSearch = (rating, adult, keyword) => {
+    fetch(
+      "https://api.themoviedb.org/3/movie/541?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-CA"
+    )
+      .then((response) => response.json())
+      .then((data) => this.setState({ movies: data }));
+    console.log("movies!!!", this.state.movies);
+  };
+
   render() {
     return (
       <div>
         <Header onToggle={this.handleToggle} />
-        <ToolBar />
+        <ToolBar onSearch={this.handleSearch} />
         <Content />
         <Footer />
         {this.state.showCart ? <Cart /> : null}

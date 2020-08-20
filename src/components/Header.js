@@ -32,7 +32,7 @@ class Header extends Component {
           className="btn btn-success"
           onClick={this.props.onToggle}
         >
-          <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+          <span className="glyphicon glyphicon-shopping-cart"></span> Cart
         </button>
       </div>
     );

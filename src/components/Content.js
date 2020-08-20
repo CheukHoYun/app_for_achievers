@@ -21,15 +21,15 @@ class Content extends Component {
     return (
       <div className="container-fluid">
         {" "}
-        <div class="row">
-          <div class="col d-flex justify-content-center">col</div>
-          <div class="col d-flex justify-content-center">col</div>
-          <div class="col d-flex justify-content-center">col</div>
-          <div class="w-100"></div>
-          <div class="col d-flex justify-content-center">col</div>
-          <div class="col d-flex justify-content-center">col</div>
-          <div class="col d-flex justify-content-center">col</div>
-          <div class="w-100"></div>
+        <div className="row">
+          <div className="col d-flex justify-content-center">col</div>
+          <div className="col d-flex justify-content-center">col</div>
+          <div className="col d-flex justify-content-center">col</div>
+          <div className="w-100"></div>
+          <div className="col d-flex justify-content-center">col</div>
+          <div className="col d-flex justify-content-center">col</div>
+          <div className="col d-flex justify-content-center">col</div>
+          <div className="w-100"></div>
         </div>{" "}
       </div>
     );
