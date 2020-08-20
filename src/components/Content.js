@@ -19,9 +19,19 @@ class Content extends Component {
   render() {
     console.log(this.state.movie);
     return (
-      <main className="content">
-        {/* <div>{this.state.movie.title}</div> */}
-      </main>
+      <div className="container-fluid">
+        {" "}
+        <div class="row">
+          <div class="col d-flex justify-content-center">col</div>
+          <div class="col d-flex justify-content-center">col</div>
+          <div class="col d-flex justify-content-center">col</div>
+          <div class="w-100"></div>
+          <div class="col d-flex justify-content-center">col</div>
+          <div class="col d-flex justify-content-center">col</div>
+          <div class="col d-flex justify-content-center">col</div>
+          <div class="w-100"></div>
+        </div>{" "}
+      </div>
     );
   }
 }

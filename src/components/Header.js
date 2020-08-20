@@ -8,12 +8,6 @@ class Header extends Component {
     };
   }
 
-  handleClick = () => {
-    this.setState((prev) => {
-      return { count: prev.count + 1 };
-    });
-  };
-
   countNumber = (n) => {
     if (n > 0) return n;
     else return "zero";
@@ -22,17 +16,25 @@ class Header extends Component {
   render() {
     const buttonStyle = {};
     return (
-      <header className="header">
-        <p>This is the header!</p>
-        <p>{this.countNumber(this.state.count)}</p>
-        <button
-          style={{ margin: 10 }}
-          className="btn btn-primary btn-sm"
-          onClick={this.handleClick}
+      <div className="container-fluid bg-light">
+        <h1
+          style={{
+            textAlign: "center",
+            margin: 5,
+            fontFamily: "Snell Roundhand, cursive",
+          }}
         >
-          Cart
+          Yonge Street Video
+        </h1>
+        <button
+          style={{ position: "absolute", right: 0, top: 0, margin: 10 }}
+          type="button"
+          className="btn btn-success"
+          onClick={this.props.onToggle}
+        >
+          <span class="glyphicon glyphicon-shopping-cart"></span> Cart
         </button>
-      </header>
+      </div>
     );
   }
 }

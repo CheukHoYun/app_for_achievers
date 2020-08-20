@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
 import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -14,15 +13,19 @@ class App extends Component {
       showCart: false,
     };
   }
+
+  handleToggle = () => {
+    this.setState({ showCart: !this.state.showCart });
+  };
+
   render() {
     return (
       <div>
-        <Header />
+        <Header onToggle={this.handleToggle} />
         <ToolBar />
         <Content />
         <Footer />
-        <Cart />
-        {this.state.showCart.toString()}
+        {this.state.showCart ? <Cart /> : null}
       </div>
     );
   }

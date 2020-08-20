@@ -4,12 +4,12 @@ class ToolBar extends Component {
   state = {};
   render() {
     return (
-      <div className="row justify-content-center">
+      <div className="row justify-content-center bg-secondary">
         <form className="form-inline">
           <div className="form-group">
             <div class="dropdown">
               <button
-                class="btn btn-secondary dropdown-toggle"
+                class="btn btn-info dropdown-toggle"
                 type="button"
                 id="dropdownMenuButton"
                 data-toggle="dropdown"
@@ -42,7 +42,10 @@ class ToolBar extends Component {
                 </a>
               </div>
             </div>
-            <label style={{ margin: 10 }} for="keyword">
+            <label
+              style={{ "margin-left": 10, "margin-right": 3 }}
+              for="keyword"
+            >
               Keyword:{" "}
             </label>
             <input
@@ -54,9 +57,9 @@ class ToolBar extends Component {
             ></input>
           </div>
           <div className="checkbox">
-            <label className="text-muted">
+            <label>
               <input
-                style={{ margin: 10 }}
+                style={{ "margin-left": 10, "margin-right": 3 }}
                 type="checkbox"
                 name="show_adult"
               ></input>
