@@ -15,6 +15,7 @@ class App extends Component {
       movies: {},
       rating: -1,
       count: 0,
+      orders: [],
     };
   }
 
@@ -34,7 +35,7 @@ class App extends Component {
   }
 
   addItem = (movie) => {
-    this.setState({ count: this.state.count + 1 });
+    this.setState({ orders: this.state.orders.concat(movie) });
   };
 
   changeStar = (star) => {
@@ -48,12 +49,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header onToggle={this.handleToggle} count={this.state.count} />
-        <ToolBar
-          rating={this.state.rating}
-          changeStar={this.changeStar}
-          onSearch={this.handleSearch}
-        />
+        <div className="sticky-top">
+          <Header onToggle={this.handleToggle} count={this.state.count} />
+          <ToolBar
+            rating={this.state.rating}
+            changeStar={this.changeStar}
+            onSearch={this.handleSearch}
+          />
+        </div>
+
         <Content
           addItem={this.addItem}
           rating={this.state.rating}
@@ -64,7 +68,11 @@ class App extends Component {
           }
         />
         <Footer />
-        {this.state.showCart ? <Cart /> : null}
+        {this.state.showCart ? (
+          <div style={{ position: "absolute", right: 50, top: 100 }}>
+            <Cart orders={this.state.orders} />
+          </div>
+        ) : null}
       </div>
     );
   }

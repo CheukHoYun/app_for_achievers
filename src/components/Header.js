@@ -14,20 +14,20 @@ class Header extends Component {
   render() {
     const buttonStyle = {};
     return (
-      <div className="container-fluid bg-light">
-        <h1
-          style={{
-            textAlign: "center",
-            margin: 5,
-            fontFamily: "Snell Roundhand, cursive",
-          }}
-        >
-          Yonge Street Video
-        </h1>
+      <div className="row bg-light">
+        <div class="col text-center">
+          <h1
+            style={{
+              fontFamily: "Snell Roundhand, cursive",
+            }}
+            className=" text-center m-2"
+          >
+            Yonge Street Video
+          </h1>
+        </div>
         <button
-          style={{ position: "absolute", right: 0, top: 0, margin: 10 }}
           type="button"
-          className="btn btn-success"
+          className="btn btn-success m-2 mr-5 ml-auto"
           onClick={this.props.onToggle}
         >
           <span className="glyphicon glyphicon-shopping-cart"></span> Cart
