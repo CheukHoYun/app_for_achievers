@@ -56,3 +56,9 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
   - Users can add movies to the shopping cart.
   - Inside the cart, a list of items is displayed. Total amount is calculated.
   - Users can remove items from the cart. There is also a check out button which is not functional.
+- Possible next steps:
+  1. Setting up a register / log-in system. May use API's from Google and others to allow login with those accounts.
+  2. To implement the Check Out button, take user to a check out page, and allow them to do transaction with credit cards. There are plenty of credit card API's out there that can be utilized.
+  3. Introduce more searching criterias (actors, genre, etc.)
+  4. Allow users to sort the results using different rules. At the moment it's defaulted to by ElasticSearch score of the results.
+  5. Some of the above features (1&2) require a backend server. I'm not sure if Git pages can host a backend Node / Python program. Will need to figure out.
