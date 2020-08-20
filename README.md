@@ -37,4 +37,22 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.20 13:15: Bunch of visual bugs got fixed.
 - Aug.20 13:47: Buttons all set up. Last task: implement shopping cart.
 - Aug.20 15:15: Shopping cart is visually done.
-- Aug.20 16:38 **Everything works. Now, polish the code and the README file. **
+- Aug.20 16:38 **Everything works. Now, polish the code and the README file.**
+
+### What's done & what's next:
+
+- Total duration: 48 hours.
+- Actual coding time: ~16 hours.
+- Features:
+  - With TMDB API, allows users to search for movies by keyword.
+  - User can choose to include adult content, or not to.
+  - The search result can be filterd so that only movies above desired ratings will be displayed.
+    - 5 Stars -> rating >= 7.4
+    - 4 Stars -> rating >= 6.5
+    - 3 Stars -> Everything
+  - Movies are displayed as cards, which contains the poster, the title, and a purchase button with price on it.
+  - When hovering your cursor over the poster, you will see the movie's rating and a piece of overview.
+  - There is a price calculated based on the movie's popularity. The more popular it is, the more expensive it will be. Maximum price is set at 19.99\$
+  - Users can add movies to the shopping cart.
+  - Inside the cart, a list of items is displayed. Total amount is calculated.
+  - Users can remove items from the cart. There is also a check out button which is not functional.
