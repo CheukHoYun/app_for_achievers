@@ -32,3 +32,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.20 03:04: Fixed some typos in README.md
 - Aug.20 09:55: Back to work
 - Aug.20 11:01: Fixed the filter by rating feature.
+- Aug.20 12:05: Succesfully making movie cards with fetched poster img. When the poster is not available, correctly points to local default pic.

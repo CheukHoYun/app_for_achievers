@@ -13,17 +13,17 @@ class Content extends Component {
     const rating = this.props.rating;
     const l = this.props.movieList;
     let returnValue = [];
-    for (let i = 0, k = 0; i < l.length; i++) {
-      if (this.props.movieList[i].vote_average > rating) {
+    let k = 0;
+    for (let i = 0; i < l.length; i++) {
+      if (this.props.movieList[i].vote_average >= rating) {
         k++;
         returnValue.push(
           <div
             key={"newcol_" + i}
             className="col d-flex justify-content-center"
           >
-            <div key={"movie_" + i} className="m-2 text-white">
-              {this.props.movieList[i].title}{" "}
-              {this.props.movieList[i].vote_average}
+            <div key={"movieCard_" + i} className="m-3 text-white">
+              <Movie key={"movie" + i} movieInfo={this.props.movieList[i]} />
             </div>
           </div>
         );
@@ -32,15 +32,37 @@ class Content extends Component {
         returnValue.push(<div key={"newline_" + i} className="w-100"></div>);
       }
     }
+    console.log(k);
+    if (k % 3 == 1) {
+      returnValue.push(
+        <div
+          key={"placeholder_1"}
+          className="col d-flex justify-content-center"
+        >
+          <div className="m-2"></div>
+        </div>
+      );
+    }
+
+    if (k % 3 == 2) {
+      returnValue.push(
+        <div
+          key={"placeholder_1"}
+          className="col d-flex justify-content-center"
+        >
+          <div className="m-2"></div>
+        </div>
+      );
+    }
     // if (l.length % 3 === 1) {
-    //   returnValue.push(
-    //     <div
-    //       key={"placeholder_1"}
-    //       className="col d-flex justify-content-center"
-    //     >
-    //       <div className="m-2"></div>
-    //     </div>
-    //   );
+    // returnValue.push(
+    //   <div
+    //     key={"placeholder_1"}
+    //     className="col d-flex justify-content-center"
+    //   >
+    //     <div className="m-2"></div>
+    //   </div>
+    // );
     // }
     // if (l.length % 3 === 2) {
     //   returnValue.push(
