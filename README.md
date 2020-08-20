@@ -62,3 +62,8 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
   3. Introduce more searching criterias (actors, genre, etc.)
   4. Allow users to sort the results using different rules. At the moment it's defaulted to by ElasticSearch score of the results.
   5. Some of the above features (1&2) require a backend server. I'm not sure if Git pages can host a backend Node / Python program. Will need to figure out.
+- Bugs to be fixed / Small features to be implemented:
+  - Need to set up a protocol to handle failed fetch requests.
+  - Need to delete some code for debugging and the code commented out.
+  - Add an animation for "add item to cart".
+  - Add an extra button for closing the cart.

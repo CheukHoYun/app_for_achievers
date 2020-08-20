@@ -6,7 +6,7 @@ class ToolBar extends Component {
     this.state = {
       keyword: "",
       isAdult: false,
-      stars: "Rated Above..",
+      stars: "Rated Above",
     };
   }
 
@@ -16,14 +16,6 @@ class ToolBar extends Component {
       ? this.setState({ [name]: checked })
       : this.setState({ [name]: value });
   };
-
-  //   toStars = (n) => {
-  //     let s = "";
-  //     for (let i = 0; i < n; i++) {
-  //       s += "★";
-  //     }
-  //     return s.length == -1 ? "Rated above" : s;
-  //   };
 
   render() {
     return (
