@@ -3,16 +3,36 @@ import React, { Component } from "react";
 class Cart extends Component {
   state = {};
 
-  makeUL = (array) => {};
+  price_Gen = (p) => {
+    if (p > 20) {
+      p = 20;
+    }
+    return Math.ceil(p) - 0.01;
+  };
 
   orders = (o) => {
     const infos = o.map((movie) => (
       <li className="list-group-item" key={"order_" + movie.id}>
-        {movie.title}
+        <div>
+          <button className="btn btn-secondary btn-sm m-2">
+            <span className="glyphicon glyphicon-remove"></span>
+          </button>
+          {movie.title}
+          <div className="float-right">${this.price_Gen(movie.popularity)}</div>
+        </div>
       </li>
     ));
     return infos;
   };
+
+  total_price = (o) => {
+    let tt = 0;
+    for (let i = 0; i < o.length; i++) {
+      tt += this.price_Gen(o[i].popularity);
+    }
+    return tt;
+  };
+
   render() {
     return (
       <div className="card" style={{ width: "600px" }}>
@@ -29,7 +49,11 @@ class Cart extends Component {
           <ul className="list-group list-group-flush">
             {this.orders(this.props.orders)}
           </ul>
-          <button className="btn btn-warning m-2 float-right">Check Out</button>
+          <div className="float-right font-weight-bold font-italic">
+            {" "}
+            Total (HST ex.): {this.total_price(this.props.orders)}
+          </div>
+          <button className="btn btn-warning m-2 float-left">Check Out</button>
         </div>
       </div>
     );

@@ -35,7 +35,15 @@ class App extends Component {
   }
 
   addItem = (movie) => {
-    this.setState({ orders: this.state.orders.concat(movie) });
+    let exist = false;
+    for (let i = 0; i < this.state.orders.length; i++) {
+      if (this.state.orders[i].id == movie.id) {
+        exist = true;
+      }
+    }
+    if (!exist) {
+      this.setState({ orders: this.state.orders.concat(movie) });
+    }
   };
 
   changeStar = (star) => {
