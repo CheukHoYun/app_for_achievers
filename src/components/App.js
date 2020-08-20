@@ -28,7 +28,6 @@ class App extends Component {
     )
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data }));
-    console.log("movies!!!", this.state.movies);
   }
 
   handleSearch = (rating, adult, keyword) => {

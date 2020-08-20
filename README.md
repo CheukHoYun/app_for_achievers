@@ -30,3 +30,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.20 01:52: Component template for movie cards is done. Ready to do the format.
 - Aug.20 03:01: Successfully mapping movie cards to their positions. Time for some sleep.
 - Aug.20 03:04: Fixed some typos in README.md
+- Aug.20 09:55: Back to work

@@ -44,7 +44,7 @@ class Content extends Component {
     console.log("hello,", this.props.movieList);
 
     return (
-      <div className="container-fluid bg-dark">
+      <div style={{ backgroundColor: "black" }} className="container-fluid">
         <div className="row m-10">{this.contentGen()}</div>{" "}
       </div>
     );
