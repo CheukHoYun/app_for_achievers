@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "946a0cce5633c18e4d009b1ad944641b",
+    "revision": "b4ec9c35ac7ad8586c2eb02cc338add7",
     "url": "/app_for_achievers/index.html"
   },
   {
-    "revision": "8ebd6fe495259f247e2b",
+    "revision": "32f737aa8429a404548a",
     "url": "/app_for_achievers/static/css/2.3d17c46a.chunk.css"
   },
   {
-    "revision": "2796fc49de9f73d3c379",
+    "revision": "b2d3906557d2c207feb8",
     "url": "/app_for_achievers/static/css/main.33f932f0.chunk.css"
   },
   {
-    "revision": "8ebd6fe495259f247e2b",
-    "url": "/app_for_achievers/static/js/2.b4a8ec35.chunk.js"
+    "revision": "32f737aa8429a404548a",
+    "url": "/app_for_achievers/static/js/2.3949357a.chunk.js"
   },
   {
     "revision": "a8eb76e4c6beb72c22bcc9f3c026930b",
-    "url": "/app_for_achievers/static/js/2.b4a8ec35.chunk.js.LICENSE.txt"
+    "url": "/app_for_achievers/static/js/2.3949357a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2796fc49de9f73d3c379",
-    "url": "/app_for_achievers/static/js/main.1a37cac7.chunk.js"
+    "revision": "b2d3906557d2c207feb8",
+    "url": "/app_for_achievers/static/js/main.81fdbc98.chunk.js"
   },
   {
     "revision": "b15ee9afe558d7e9b674",
