@@ -92,7 +92,11 @@ class App extends Component {
         <Footer />
         {this.state.showCart ? (
           <div style={{ position: "fixed", right: 50, top: 100 }}>
-            <Cart removeItem={this.removeItem} orders={this.state.orders} />
+            <Cart
+              toggle={this.handleToggle}
+              removeItem={this.removeItem}
+              orders={this.state.orders}
+            />
           </div>
         ) : null}
       </div>

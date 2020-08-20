@@ -42,7 +42,10 @@ class Cart extends Component {
         <div className="card-header bg-primary text-white">
           <span className="glyphicon glyphicon-shopping-cart"></span> Your
           Shopping Cart
-          <span className="glyphicon glyphicon-remove float-right"></span>
+          <span
+            onClick={this.props.toggle}
+            className="glyphicon glyphicon-remove float-right"
+          ></span>
         </div>
         <div className="card-body bg-light">
           <h5 className="card-title">Thank you for shopping with us</h5>
