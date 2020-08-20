@@ -1,11 +1,9 @@
 import React, { Component } from "react";
+import Counter from "./Counter";
 
 class Header extends Component {
   constructor() {
     super();
-    this.state = {
-      count: 0,
-    };
   }
 
   countNumber = (n) => {
@@ -33,6 +31,7 @@ class Header extends Component {
           onClick={this.props.onToggle}
         >
           <span className="glyphicon glyphicon-shopping-cart"></span> Cart
+          <span className="badge badge-light ml-2">{this.props.count}</span>
         </button>
       </div>
     );

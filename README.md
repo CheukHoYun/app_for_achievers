@@ -35,3 +35,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.20 12:05: Succesfully making movie cards with fetched poster img. When the poster is not available, correctly points to local default pic.
 - Aug.20 12:40: Added purchase button and information for movies that will show up when mouse hovering over.
 - Aug.20 13:15: Bunch of visual bugs got fixed.
+- Aug.20 13:47: Buttons all set up. Last task: implement shopping cart.

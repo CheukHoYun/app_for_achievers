@@ -68,7 +68,10 @@ class Movie extends Component {
           <h5 className="card-title font-weight-bold">
             {movie.title} {this.date_to_year(movie.release_date)}
           </h5>
-          <button className="btn btn-primary font-weight-bold">
+          <button
+            onClick={() => this.props.addItem(movie)}
+            className="btn btn-primary font-weight-bold"
+          >
             <span className="glyphicon glyphicon-shopping-cart"></span>
             {price}
           </button>

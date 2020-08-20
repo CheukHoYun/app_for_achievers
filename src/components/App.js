@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Cart from "./Cart";
 import ToolBar from "./ToolBar";
+import Counter from "./Counter";
 
 class App extends Component {
   constructor() {
@@ -12,7 +13,8 @@ class App extends Component {
     this.state = {
       showCart: false,
       movies: {},
-      rating: 0,
+      rating: -1,
+      count: 0,
     };
   }
 
@@ -31,6 +33,10 @@ class App extends Component {
       .then((data) => this.setState({ movies: data }));
   }
 
+  addItem = (movie) => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
   changeStar = (star) => {
     this.setState({ rating: star });
   };
@@ -42,13 +48,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header onToggle={this.handleToggle} />
+        <Header onToggle={this.handleToggle} count={this.state.count} />
         <ToolBar
           rating={this.state.rating}
           changeStar={this.changeStar}
           onSearch={this.handleSearch}
         />
         <Content
+          addItem={this.addItem}
           rating={this.state.rating}
           movieList={
             Object.keys(this.state.movies).length === 0

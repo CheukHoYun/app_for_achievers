@@ -6,8 +6,8 @@ class Footer extends Component {
     return (
       <div className="container-fluid d-flex justify-content-center bg-dark text-white p-3">
         <div>
-          Disclaimer: This is a project for learning & demonstration purpose
-          only.
+          To start, fill in the keywords and press Search. Disclaimer: This is a
+          project for learning & demonstration purpose only.
         </div>
       </div>
     );

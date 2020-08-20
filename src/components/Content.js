@@ -23,7 +23,11 @@ class Content extends Component {
             className="col d-flex justify-content-center"
           >
             <div key={"movieCard_" + i} className="m-3 text-white">
-              <Movie key={"movie" + i} movieInfo={this.props.movieList[i]} />
+              <Movie
+                addItem={this.props.addItem}
+                key={"movie" + i}
+                movieInfo={this.props.movieList[i]}
+              />
             </div>
           </div>
         );
