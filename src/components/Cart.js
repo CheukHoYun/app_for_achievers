@@ -14,7 +14,10 @@ class Cart extends Component {
     const infos = o.map((movie) => (
       <li className="list-group-item" key={"order_" + movie.id}>
         <div>
-          <button className="btn btn-secondary btn-sm m-2">
+          <button
+            className="btn btn-secondary btn-sm m-2"
+            onClick={() => this.props.removeItem(movie.id)}
+          >
             <span className="glyphicon glyphicon-remove"></span>
           </button>
           {movie.title}
@@ -51,7 +54,7 @@ class Cart extends Component {
           </ul>
           <div className="float-right font-weight-bold font-italic">
             {" "}
-            Total (HST ex.): {this.total_price(this.props.orders)}
+            Total (HST ex.): {this.total_price(this.props.orders).toFixed(2)}
           </div>
           <button className="btn btn-warning m-2 float-left">Check Out</button>
         </div>

@@ -37,3 +37,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - Aug.20 13:15: Bunch of visual bugs got fixed.
 - Aug.20 13:47: Buttons all set up. Last task: implement shopping cart.
 - Aug.20 15:15: Shopping cart is visually done.
+- Aug.20 16:38 **Everything works. Now, polish the code and the README file. **

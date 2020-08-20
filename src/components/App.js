@@ -14,7 +14,6 @@ class App extends Component {
       showCart: false,
       movies: {},
       rating: -1,
-      count: 0,
       orders: [],
     };
   }
@@ -31,7 +30,7 @@ class App extends Component {
         adult.toString()
     )
       .then((response) => response.json())
-      .then((data) => this.setState({ movies: data }));
+      .then((data) => this.setState({ movies: data.results }));
   }
 
   addItem = (movie) => {
@@ -46,6 +45,20 @@ class App extends Component {
     }
   };
 
+  removeItem = (movie_id) => {
+    console.log("Calling remove on movie id: ", movie_id);
+    let new_orders = [];
+    for (let i = 0; i < this.state.orders.length; i++) {
+      console.log(this.state.orders[i].id);
+      if (this.state.orders[i].id != movie_id) {
+        console.log("keeping ", movie_id);
+        new_orders = new_orders.concat(this.state.orders[i]);
+      }
+    }
+    console.log(new_orders);
+    this.setState({ orders: new_orders });
+  };
+
   changeStar = (star) => {
     this.setState({ rating: star });
   };
@@ -58,7 +71,10 @@ class App extends Component {
     return (
       <div>
         <div className="sticky-top">
-          <Header onToggle={this.handleToggle} count={this.state.count} />
+          <Header
+            onToggle={this.handleToggle}
+            count={this.state.orders.length}
+          />
           <ToolBar
             rating={this.state.rating}
             changeStar={this.changeStar}
@@ -70,15 +86,13 @@ class App extends Component {
           addItem={this.addItem}
           rating={this.state.rating}
           movieList={
-            Object.keys(this.state.movies).length === 0
-              ? {}
-              : this.state.movies.results
+            Object.keys(this.state.movies).length === 0 ? {} : this.state.movies
           }
         />
         <Footer />
         {this.state.showCart ? (
           <div style={{ position: "absolute", right: 50, top: 100 }}>
-            <Cart orders={this.state.orders} />
+            <Cart removeItem={this.removeItem} orders={this.state.orders} />
           </div>
         ) : null}
       </div>
