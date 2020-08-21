@@ -15,6 +15,7 @@ class App extends Component {
       movies: {},
       rating: -1,
       orders: [],
+      test: {},
     };
   }
 
@@ -31,6 +32,19 @@ class App extends Component {
     )
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.results }));
+  }
+
+  async fetchposts_test(adult, keyword) {
+    let response = await fetch(
+      "https://api.themoviedb.org/3/search/movie?api_key=f1eac36202d95b8df16fcf8afd17c6b0&language=en-US&query=" +
+        keyword +
+        "&page=1&include_adult=" +
+        adult.toString()
+    )
+      .then((response) => response.json())
+      .then((data) => this.setState({ test: data.results }));
+
+    console.log(this.state.test);
   }
 
   addItem = (movie) => {

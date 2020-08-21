@@ -15,7 +15,7 @@ class Header extends Component {
     const buttonStyle = {};
     return (
       <div className="row bg-light">
-        <div class="col text-center">
+        <div className="col text-center">
           <h1
             style={{
               fontFamily: "Snell Roundhand, cursive",

@@ -15,7 +15,7 @@ class Movie extends Component {
   };
 
   date_to_year = (d) => {
-    return "(" + d.slice(0, 4) + ")";
+    return typeof d == "undefined" ? null : "(" + d.slice(0, 4) + ")";
   };
 
   shrink_text = (text) => {
