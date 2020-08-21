@@ -23,7 +23,14 @@ class ToolBar extends Component {
         style={{ fontSize: 14 }}
         className="row justify-content-center bg-secondary "
       >
-        <form className="form-inline">
+        <form
+          action={"javascript:void(-1)"}
+          onSubmit={() => {
+            this.props.onSearch(this.state.isAdult, this.state.keyword);
+            return false;
+          }}
+          className="form-inline"
+        >
           <div className="form-group">
             <div className="dropdown">
               <button
