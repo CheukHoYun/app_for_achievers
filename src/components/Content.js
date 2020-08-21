@@ -32,52 +32,8 @@ class Content extends Component {
           </div>
         );
       }
-      if (k % 3 == 0) {
-        returnValue.push(<div key={"newline_" + i} className="w-100"></div>);
-      }
-    }
-    console.log(k);
-    if (k % 3 == 1) {
-      returnValue.push(
-        <div
-          key={"placeholder_1"}
-          className="col d-flex justify-content-center"
-        >
-          <div className="m-2"></div>
-        </div>
-      );
     }
 
-    if (k % 3 == 2) {
-      returnValue.push(
-        <div
-          key={"placeholder_1"}
-          className="col d-flex justify-content-center"
-        >
-          <div className="m-2"></div>
-        </div>
-      );
-    }
-    // if (l.length % 3 === 1) {
-    // returnValue.push(
-    //   <div
-    //     key={"placeholder_1"}
-    //     className="col d-flex justify-content-center"
-    //   >
-    //     <div className="m-2"></div>
-    //   </div>
-    // );
-    // }
-    // if (l.length % 3 === 2) {
-    //   returnValue.push(
-    //     <div
-    //       key={"placeholder_2"}
-    //       className="col d-flex justify-content-center"
-    //     >
-    //       <div className="m-2"></div>
-    //     </div>
-    //   );
-    // }
     return returnValue;
   };
 
