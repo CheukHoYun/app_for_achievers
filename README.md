@@ -40,7 +40,7 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
 - **Aug.20 15:15: Shopping cart is visually done.**
 - **Aug.20 16:38  Everything works. Now, polish the code and the README file.**
 
-### What's done & what's next:
+### What's done & what's next (Sprint Review):
 
 - Total duration: 48 hours.
 - Actual coding time: ~16 hours.
