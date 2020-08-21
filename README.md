@@ -67,4 +67,4 @@ You can view the current build at: https://cheukhoyun.github.io/app_for_achiever
   - Need to set up a protocol to handle failed fetch requests.
   - Need to delete some code for debugging and the code commented out.
   - Add an animation for "add item to cart".
-  - Add an extra button for closing the cart.
+  - ~~Add an extra button for closing the cart.~~ Done
